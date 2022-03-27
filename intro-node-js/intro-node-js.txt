@@ -1,0 +1,24 @@
+1.  Node.js adalah open source server environment yang menggunakan JavaScript di server nya. Perbedaan nya dengan Javascript adalah JavaScript cuma bisa di jalankan di dalam browser.
+
+2.  Javascript menggunakan call stack untuk melakukan manajemen single thread. Ketika terdapat perintah baru maka akan ditambahkan (push) dan akan di keluarkan ketika perintahnya sudah selesai (pop). Kemudian event loop akan memeriksa event queue terus menerus, ketika antrian kosong di call stack maka akan menambah antrian baru dari event queue sampai semua perintah selesai di eksekusi.
+
+3.  Built-in Module : module yang di dapatkan saat menginstall node.js.
+    External Module : module yang tersedia secara online menggunakan Node Package Manager(NPM).
+    Custom Module   : module yang yang dibuat secara local di dalam app node.js.
+
+4.  Built-in module  :
+        const http = require("http");
+
+        http
+        .createServer(function (req, res) {
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.write("<h1>ini skilvul</h1>");
+        res.write(req.url);
+        res.end();
+        })
+        .listen(8000);
+    
+    External Module : npm install express
+
+    Custom Module   : const calculator = require('./calc');
+
