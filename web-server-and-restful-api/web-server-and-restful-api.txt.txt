@@ -1,0 +1,26 @@
+1.  - They have different purposes and concerns.
+    - They generally don't use the same programming languages (the exception being JavaScript, which can be used on the server- and client-side).
+    - They run inside different operating system environments.
+
+
+2.  a. Requests for static resources are handled in the same way as for static sites (static resources are any files that don't change —typically: CSS, JavaScript, Images, pre-created PDF files etc).
+    b. A simplified diagram of a web server that uses server-side programming to get information from a database and construct HTML from templates. This is the same diagram as is in the Client-Server overview. Requests for dynamic resources are instead forwarded to server-side code (shown in the diagram as a Web Application).
+    c. For "dynamic requests" the server interprets the request, reads required information from the database.
+    d. Combines the retrieved data with HTML templates.
+    e. and sends back a response containing the generated HTML (5,6).
+
+3.  - Efficient storage and delivery of information.
+    - Customised user experience.
+    - Controlled access to content.
+    - Store session/state information.
+    - Notifications and communication.
+    - Data analysis.
+
+4.  REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
+
+5.  - GET — retrieve a specific resource (by id) or a collection of resources.
+    - POST — create a new resource.
+    - PUT — update a specific resource (by id).
+    - DELETE — remove a specific resource by id.
+
+6.  to alert the client to information about the success of the operation.
