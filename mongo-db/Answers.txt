@@ -64,7 +64,7 @@
             "_id": "ObjectId('BBB')",
             "cinemaName": "Cinema 31",
             "films": ["ASD", "ZXC"],
-            "location": "Pondok Indah Mall"
+            "location": "Mall Kelapa Gading"
         }
     
     Films :
