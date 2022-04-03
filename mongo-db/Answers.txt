@@ -1,0 +1,79 @@
+1.  relasi "one to one" (1 user, 1 account).
+
+    {
+        "_id": "ObjectId('AAA')",
+        "fullName": "pon",
+        "email": "pon@mail.com",
+        "phoneNumber": "111122223333"
+    }
+
+
+2.  relasi "one to one" (1 user, 1 account).
+
+    {
+        "_id": "ObjectId('AAA')",
+        "fullName": "pon",
+        "email": "pon@mail.com",
+        "phoneNumber": "111122223333",
+        "address" : {
+            "1": "alamat A",
+            "2": "alamat B"
+        }
+    }
+
+
+3.  relasi "one to many" (1 product, > 1 variant).
+    
+    Product :
+
+        {
+            "_id": "ObjectId('AAA')",
+            "productName": "Kaos Polos",
+            "brandName": "SkillShirt"
+        }
+
+    Variants :
+
+        {
+            "_id": "ObjectId('ASD')",
+            "varianName": "Kaos Polos Hitam",
+            "color": "Hitam",
+            "quantity": 12,
+            "price": 99000
+        },
+        {
+            "_id": "ObjectId('ZXC')",
+            "varianName": "Kaos Polos Navy",
+            "color": "Navy",
+            "quantity": 10,
+            "price": 99000
+        }
+
+
+4.  relasi many to many (> 1 cinema, > 1 film).
+
+    Cinemas:
+
+        {
+            "_id": "ObjectId('AAA')",
+            "cinemaName": "CGF",
+            "films": ["ASD", "ZXC"],
+            "location": "Pondok Indah Mall"
+        },
+        {
+            "_id": "ObjectId('BBB')",
+            "cinemaName": "Cinema 31",
+            "films": ["ASD", "ZXC"],
+            "location": "Pondok Indah Mall"
+        }
+    
+    Films :
+
+        {
+            "_id": "ObjectId('ASD')",
+            "name": "Venom 2"
+        },
+        {
+            "_id": "ObjectId('ZXC')",
+            "name": "Spiderman No Way Home"
+        }
