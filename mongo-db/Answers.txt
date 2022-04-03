@@ -50,7 +50,7 @@
         }
 
 
-4.  relasi many to many (> 1 cinema, > 1 film).
+4.  relasi "many to many" (> 1 cinema, > 1 film).
 
     Cinemas:
 
